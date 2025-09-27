@@ -3,6 +3,7 @@ This code needs to be revised.
 """
 import threading
 
+
 # Inspired in https://stackoverflow.com/questions/6760685/what-is-the-best-way-of-implementing-a-singleton-in-python
 class SingletonMeta(type):
     _instances: dict[type, object] = {}
