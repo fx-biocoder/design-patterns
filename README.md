@@ -5,6 +5,7 @@ This repository contains Python implementations of the Gang of Four (GoF) design
 ## Implemented Patterns
 
 ### Creational Patterns
+
 1. Factory Method
 2. Abstract Factory
 3. Builder
@@ -12,7 +13,18 @@ This repository contains Python implementations of the Gang of Four (GoF) design
 5. Singleton
 
 ### Structural Patterns
-6. Adapter
+
+1. Adapter
+2. Bridge
+3. Composite
+4. Decorator 
+5. Facade
+
+### Behavioral Patterns
+
+1. Chain of Responsibility
+2. Command
+3. Iterator
 
 ## License
 This work is licensed under CC BY-NC-SA 4.0. See the LICENSE.md file for details.
