@@ -26,20 +26,20 @@ from typing import List
 
 class Graphic(ABC):
     @abstractmethod
-    def move(self, x, y):
-        raise NotImplementedError()
+    def move(self, x: int, y: int):
+        raise NotImplementedError
 
     @abstractmethod
     def draw(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
 
 class Dot(Graphic):
-    def __init__(self, x, y):
+    def __init__(self, x: int, y: int):
         self.x = x
         self.y = y
 
-    def move(self, x, y) -> None:
+    def move(self, x: int, y: int) -> None:
         self.x += x
         self.y += y
 
@@ -57,7 +57,7 @@ class CompoundGraphic(Graphic):
     def remove(self, child: Graphic) -> None:
         self.__children.remove(child)
 
-    def move(self, x, y) -> None:
+    def move(self, x: int, y: int) -> None:
         for child in self.__children:
             child.move(x, y)
 
@@ -67,7 +67,7 @@ class CompoundGraphic(Graphic):
 
 
 class Circle(Dot):
-    def __init__(self, x, y, radius):
+    def __init__(self, x: int, y: int, radius: int):
         super().__init__(x, y)
         self.radius = radius
 

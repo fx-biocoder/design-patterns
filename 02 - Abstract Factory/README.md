@@ -16,7 +16,7 @@ The Abstract Factory pattern solves several important problems in software desig
 
 ## Can I combine this design pattern with others? Which ones?
 
-- The Abstract Factory pattern can be effectively combined with several other design patterns:
+- The Abstract Factory pattern can be combined with several other design patterns:
 
 - Factory Method: Abstract Factory classes are often implemented using Factory Methods
 - Singleton: An Abstract Factory can be implemented as a Singleton when exactly one instance is needed

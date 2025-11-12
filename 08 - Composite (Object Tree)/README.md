@@ -16,7 +16,7 @@ The Composite pattern solves several important problems in software design:
 
 ## Can I combine this design pattern with others? Which ones?
 
-The Composite pattern can be effectively combined with several other design patterns:
+The Composite pattern can be combined with several other design patterns:
 
 - Builder: Can be used to construct complex Composite trees step by step
 - Iterator: Can be used to traverse Composite trees

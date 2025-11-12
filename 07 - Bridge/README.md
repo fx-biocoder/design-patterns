@@ -16,7 +16,7 @@ The Bridge pattern solves several important problems in software design:
 
 ## Can I combine this design pattern with others? Which ones?
 
-The Bridge pattern can be effectively combined with several other design patterns:
+The Bridge pattern can be combined with several other design patterns:
 
 - Abstract Factory: Can be used to create and configure specific Bridge implementations
 - Adapter: Bridge is designed up-front to let abstractions and implementations vary independently, while Adapter is commonly used with existing code
@@ -52,7 +52,6 @@ The implementation in `main.py` demonstrates the Bridge pattern through a device
 ### Client Code:
 - Shows how to use different combinations of devices and remotes
 - Demonstrates the flexibility of switching implementations
-- Illustrates how abstraction and implementation can vary independently
 
 ## License
 

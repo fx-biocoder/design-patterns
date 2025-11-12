@@ -16,7 +16,7 @@ The Decorator pattern solves several important problems in software design:
 
 ## Can I combine this design pattern with others? Which ones?
 
-The Decorator pattern can be effectively combined with several other design patterns:
+The Decorator pattern can be combined with several other design patterns:
 
 - Adapter: Decorator can change the interface of an object while Adapter makes incompatible objects work together
 - Bridge: Both patterns can be used to change behavior dynamically

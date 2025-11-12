@@ -16,7 +16,7 @@ The Adapter pattern addresses several important problems in software design:
 
 ## Can I combine this design pattern with others? Which ones?
 
-The Adapter pattern can be effectively combined with several other design patterns:
+The Adapter pattern can be combined with several other design patterns:
 
 - Bridge: Adapter is often used in systems where Bridge pattern is already present
 - Decorator: Adapter changes the interface of an object, while Decorator enhances it without changing the interface
@@ -51,7 +51,6 @@ The implementation in `main.py` demonstrates the Adapter pattern through a geome
 ### Client Code:
 - Demonstrates usage of both regular round pegs and adapted square pegs
 - Shows how adapter makes incompatible objects work together
-- Illustrates size compatibility checks with different peg sizes
 
 ## License
 

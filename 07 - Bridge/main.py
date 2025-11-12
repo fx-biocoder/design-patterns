@@ -27,53 +27,53 @@ from abc import ABC, abstractmethod
 class Device(ABC):
     @abstractmethod
     def is_enabled(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     @abstractmethod
     def enable(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     @abstractmethod
     def disable(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     @abstractmethod
     def get_volume(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     @abstractmethod
     def set_volume(self, percent: int):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     @abstractmethod
     def get_channel(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     @abstractmethod
     def set_channel(self, channel: int):
-        raise NotImplementedError()
+        raise NotImplementedError
 
 
 class RemoteControl(ABC):
     def __init__(self, device: Device):
         self._device = device
 
-    def toggle_power(self):
+    def toggle_power(self) -> None:
         if self._device.is_enabled():
             self._device.disable()
         else:
             self._device.enable()
 
-    def volume_down(self):
+    def volume_down(self) -> None:
         self._device.set_volume(self._device.get_volume() - 10)
 
-    def volume_up(self):
+    def volume_up(self) -> None:
         self._device.set_volume(self._device.get_volume() + 10)
 
-    def channel_down(self):
+    def channel_down(self) -> None:
         self._device.set_channel(self._device.get_channel() - 1)
 
-    def channel_up(self):
+    def channel_up(self) -> None:
         self._device.set_channel(self._device.get_channel() + 1)
 
 
@@ -81,7 +81,7 @@ class AdvancedRemoteControl(RemoteControl):
     def __init__(self, device: Device):
         super().__init__(device)
 
-    def mute(self):
+    def mute(self) -> None:
         self._device.set_volume(0)
 
 
@@ -131,7 +131,7 @@ class Radio(Device):
         pass
 
 
-def client():
+def client() -> None:
     tv = Televisor()
     remote = RemoteControl(tv)
     remote.toggle_power()

@@ -1,4 +1,4 @@
-# Design Patterns (Work In Progress)
+# Design Patterns
 
 This repository contains Python implementations of the Gang of Four (GoF) design patterns. Each implementation includes detailed documentation and examples to help understand the pattern's purpose and usage.
 
@@ -25,6 +25,13 @@ This repository contains Python implementations of the Gang of Four (GoF) design
 1. Chain of Responsibility
 2. Command
 3. Iterator
+4. Mediator
+5. Memento
+6. Observer
+7. State
+8. Strategy
+9. Template Method
+10. Visitor
 
 ## License
 This work is licensed under CC BY-NC-SA 4.0. See the LICENSE.md file for details.

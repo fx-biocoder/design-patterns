@@ -16,7 +16,7 @@ The Prototype pattern addresses several important problems in object creation:
 
 ## Can I combine this design pattern with others? Which ones?
 
-The Prototype pattern can be effectively combined with several other design patterns:
+The Prototype pattern can be combined with several other design patterns:
 
 - Abstract Factory: Prototype can be used to implement Abstract Factories by storing a set of prototypical objects
 - Command: Prototype can be used to store command history by making deep copies of commands

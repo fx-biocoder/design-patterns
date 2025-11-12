@@ -21,13 +21,14 @@ License:
 CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
 """
 import math
+from typing import Union
 
 
 class RoundPeg:
     def __init__(self, radius: int):
         self.radius = radius
 
-    def get_radius(self):
+    def get_radius(self) -> int:
         return self.radius
 
 
@@ -35,10 +36,10 @@ class RoundHole:
     def __init__(self, radius: int):
         self.radius = radius
 
-    def get_radius(self):
+    def get_radius(self) -> int:
         return self.radius
 
-    def fits(self, peg: RoundPeg):
+    def fits(self, peg: RoundPeg) -> bool:
         return self.get_radius() >= peg.get_radius()
 
 
@@ -46,7 +47,7 @@ class SquarePeg:
     def __init__(self, width: int):
         self.width = width
 
-    def get_width(self):
+    def get_width(self) -> Union[int, float]:
         return self.width
 
 
@@ -55,7 +56,7 @@ class SquarePegAdapter(RoundPeg):
         super().__init__(radius)
         self.peg = peg
 
-    def get_radius(self):
+    def get_radius(self) -> float:
         return self.peg.get_width() * math.sqrt(2) / 2
 
 

@@ -16,7 +16,7 @@ The Builder pattern addresses several key problems in object creation:
 
 ## Can I combine this design pattern with others? Which ones?
 
-The Builder pattern can be effectively combined with several other design patterns:
+The Builder pattern can be combined with several other design patterns:
 
 - Abstract Factory: Builder can be used to create complex products within an Abstract Factory
 - Composite: Builders are often used to build Composite trees or other complex objects

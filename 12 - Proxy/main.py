@@ -73,7 +73,7 @@ class YoutubeManager:
         videos_list = self._service.list_videos()
         return videos_list
 
-    def react_on_user_input(self, _id=None):
+    def react_on_user_input(self, _id=None) -> None:
         self.render_video_page(_id)
         self.render_list_panel()
 

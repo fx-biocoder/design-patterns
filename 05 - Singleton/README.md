@@ -16,7 +16,7 @@ The Singleton pattern addresses several key problems in software design:
 
 ## Can I combine this design pattern with others? Which ones?
 
-The Singleton pattern can be effectively combined with several other design patterns:
+The Singleton pattern can be combined with several other design patterns:
 
 - Abstract Factory: Singletons can be used to implement Abstract Factories
 - Builder: The Director class in Builder pattern is often implemented as a Singleton
@@ -46,13 +46,6 @@ The implementation in `main.py` demonstrates the Singleton pattern through a thr
 ### Main Function:
 - Demonstrates the usage of singleton classes
 - Shows that multiple instantiation attempts return the same instance
-- Illustrates that different singleton classes maintain separate instances
-
-### Key Features:
-- Thread-safe implementation using `threading.Lock`
-- Support for multiple singleton classes through metaclass inheritance
-- Lazy initialization (instance created only when first requested)
-- Global instance access through class instantiation syntax
 
 ## License
 

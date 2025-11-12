@@ -16,7 +16,7 @@ The Facade pattern solves several important problems in software design:
 
 ## Can I combine this design pattern with others? Which ones?
 
-The Facade pattern can be effectively combined with several other design patterns:
+The Facade pattern can be combined with several other design patterns:
 
 - Abstract Factory: Can be used to create facades for different subsystem families
 - Singleton: A facade is often implemented as a singleton since only one facade instance is typically needed
@@ -27,7 +27,25 @@ The Facade pattern can be effectively combined with several other design pattern
 
 ## Contents of this section
 
-(pending)
+The implementation in `main.py` demonstrates the Facade pattern through a video conversion system with the following components:
+
+`File`: A generic file class that represents saved files with basic file operations like save.
+
+`VideoFile`: Represents a video file that contains the filename of the video to be processed.
+
+`OggCompressionCodec`: A concrete codec implementation for OGG compression format.
+
+`MPEG4CompressionCodec`: A concrete codec implementation for MPEG4 compression format.
+
+`CodecFactory`: A factory class that extracts and identifies the codec type from a video file.
+
+`BitrateReader`: Handles reading files with a specific codec and converting the buffer to a destination codec format.
+
+`AudioMixer`: Handles audio conversion and fixes the final result to ensure proper audio-video synchronization.
+
+`VideoConverter`: The facade class that simplifies the complex video conversion process by coordinating multiple subsystem components into a single, easy-to-use interface.
+
+`Application`: The client application that uses the VideoConverter facade to convert video files without needing to know about the underlying complexity of the conversion process.
 
 ## License
 

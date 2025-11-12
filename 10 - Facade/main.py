@@ -25,7 +25,7 @@ class File:
         self.filename = filename
 
     @staticmethod
-    def save():
+    def save() -> None:
         print("Saving file...")
 
 
